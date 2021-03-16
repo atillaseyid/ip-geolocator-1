@@ -8,9 +8,9 @@
 	<description>Java class library for obtaining geolocation information of an IP address.</description>
 	<developers>
 		<developer>
-			<id>jeszy</id>
-			<name>Péter Jeszenszky</name>
-			<email>jeszenszky.peter@inf.unideb.hu</email>
+			<id>atillaseyid</id>
+			<name>Atilla Seyid</name>
+			<email>atillaseyid87@gmail.com</email>
 			<organization>Faculty of Informatics, University of Debrecen</organization>
 			<organizationUrl>http://www.inf.unideb.hu/</organizationUrl>
 		</developer>
@@ -41,12 +41,7 @@
 			<version>${jackson-databind.version}</version>
 			<scope>compile</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.18</version>
-			<scope>compile</scope>
-		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
@@ -63,19 +58,7 @@
 					<mainClass>${mainClass}</mainClass>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.projectlombok</groupId>
-				<artifactId>lombok-maven-plugin</artifactId>
-				<version>1.18.16.0</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>delombok</goal>
-						</goals>
-						<phase>generate-sources</phase>
-					</execution>
-				</executions>
-			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
@@ -157,7 +140,7 @@
 	<distributionManagement>
 		<site>
 			<id>shrek</id>
-			<url>scp://@shrek.unideb.hu:2222/home/jeszy/public_html/${project.artifactId}</url>
+			<url>scp://@shrek.unideb.hu:2222/home/atillaseyid/public_html/${project.artifactId}</url>
 		</site>
 	</distributionManagement>
 </project>
